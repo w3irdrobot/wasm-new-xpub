@@ -1,0 +1,17 @@
+[package]
+name = "wasm-new-xpub"
+version = "0.1.0"
+edition = "2021"
+authors = ["Alex Sears"]
+repository = "https://github.com/w3irdrobot/wasm-new-xpub"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+bip32 = "0.3"
+bip39 = "1.0"
+hex = "0.4.3"
+rand = { version = "^0.6.0", features = ["wasm-bindgen"] }
+wasm-bindgen = "0.2"

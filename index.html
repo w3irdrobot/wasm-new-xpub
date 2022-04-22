@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Generate XPUB</title>
+</head>
+
+<body>
+    <div id="container">
+        <p id="mnemonic"></p>
+        <p id="xpub"></p>
+        <p id="fingerprint"></p>
+    </div>
+    <script type="module">
+        import init, { XPub } from "./pkg/wasm_new_xpub.js";
+
+        init().then(() => {
+            const xpub = XPub.new();
+
+            document.getElementById('mnemonic').textContent = xpub.mnemonic();
+            document.getElementById('xpub').textContent = xpub.xpub();
+            document.getElementById('fingerprint').textContent = xpub.fingerprint();
+        });
+    </script>
+</body>
+
+</html>
