@@ -1,0 +1,20 @@
+{
+  "name": "wasm-new-xpub",
+  "collaborators": [
+    "Alex Sears"
+  ],
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/w3irdrobot/wasm-new-xpub"
+  },
+  "files": [
+    "wasm_new_xpub_bg.wasm",
+    "wasm_new_xpub.js",
+    "wasm_new_xpub.d.ts"
+  ],
+  "module": "wasm_new_xpub.js",
+  "types": "wasm_new_xpub.d.ts",
+  "sideEffects": false
+}
